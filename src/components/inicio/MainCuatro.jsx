@@ -28,8 +28,8 @@ export default function MainCuatro(){
 
     return(
         
-        <div className="mt-40 mb-20"> {/* NOTICIAS */}
-            <h2 className="text-[#1d4674] text-center text-2xl md:text-[3.6rem] font-bold mb-14 roboto">BLOG Y NOTICIAS</h2>
+        <div className="mt-48 mb-20"> {/* NOTICIAS */}
+            <h2 className="text-[#1d4674] text-center text-2xl md:text-[3.3rem] font-bold mb-14 roboto">BLOG Y NOTICIAS</h2>
             <div className="flex flex-col lg:flex-row justify-center space-x-14 ">
                 {
                     informacion.map((e, index)=> (

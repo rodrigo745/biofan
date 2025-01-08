@@ -42,8 +42,8 @@ export default function Aplicaciones(){
     return(
         <div className="w-full mb-20">
             <div className="w-full flex flex-col items-center justify-center pt-10 ">
-                <h2 className="text-[#1d4674] text-2xl roboto md:text-6xl font-bold mb-8">ÁREA DE APLICACIÓN</h2>
-                <p className="w-[71vw] mb-10 text-2xl text-justify helvetica">La Serie de ventiladores industriales BIOFAN ha sido cuidadosamente desarrollada para llegar a tantas aplicaciones como sea posible con la tecnología más avanzada. Ofrecemos ventiladores que se pueden encontrar en una amplia variedad de espacios industriales y comerciales. </p>
+                <h2 className="text-[#1d4674] text-2xl roboto md:text-5xl font-bold mb-8">ÁREA DE APLICACIÓN</h2>
+                <p className="w-[71vw] mb-10 text-xl text-justify helvetica">La Serie de ventiladores industriales BIOFAN ha sido cuidadosamente desarrollada para llegar a tantas aplicaciones como sea posible con la tecnología más avanzada. Ofrecemos ventiladores que se pueden encontrar en una amplia variedad de espacios industriales y comerciales. </p>
                 <div className="w-[90%] md:w-[75%] flex justify-between text-md md:text-2xl mt-0 text-[#1d4674] font-bold helvetica">
                     <p onClick={mostrarPestaña} id="0" className={!pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}` }>Escenarios industriales</p>
                     <p onClick={mostrarPestaña} id="1" className={pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}` }>Escenarios comerciales</p>
@@ -129,11 +129,11 @@ export default function Aplicaciones(){
                                         </div>
                                     }
             <div className="bg-[#f6f1f1] p-2 mt-20 mb-40">
-                <p className="mt-20 text-[3.5rem] font-bold text-center text-[#1d4674] roboto">¿NO SABES POR DÓNDE EMPEZAR?</p>
-                <p className="text-[#3c3c3a] text-center text-3xl font-bold mt-4 italic">No te preocupes, personalizamos una solución a tu necesidad </p>
-                <p className="text-[#fe7604] text-center font-bold mt-5 text-[2.6rem]">¡Sólo dinos que estás buscando!</p>
+                <p className="mt-20 text-[2.8rem] font-bold text-center text-[#1d4674] roboto">¿NO SABES POR DÓNDE EMPEZAR?</p>
+                <p className="text-[#3c3c3a] text-center text-[1.9rem] font-bold mt-4 italic">No te preocupes, personalizamos una solución a tu necesidad </p>
+                <p className="text-[#fe7604] text-center font-bold mt-5 text-[2.1rem]">¡Sólo dinos que estás buscando!</p>
                 <div className="bg-[#fe7604] w-[98.5vw] h-[30vh] absolute z-0 mt-[250px]"></div>
-                <Image src="/aplicaciones.png" alt="" width={1200} height={1200} className="mx-auto relative mt-10 z-10" />
+                <Image src="/aplicaciones.png" alt="" width={1200} height={1200} className="mx-auto relative mt-10 z-10 scale-90" />
 
             </div>
 
