@@ -128,12 +128,12 @@ export default function Aplicaciones(){
                                             <button className="btnModal w-2 h-2"></button>
                                         </div>
                                     }
-            <div className="bg-[#f6f1f1] p-2 mt-20 mb-40">
+            <div className="bg-[#f6f1f1] p-2 mt-20 mb-28">
                 <p className="mt-20 text-[2.8rem] font-bold text-center text-[#1d4674] roboto">¿NO SABES POR DÓNDE EMPEZAR?</p>
                 <p className="text-[#3c3c3a] text-center text-[1.9rem] font-bold mt-4 italic">No te preocupes, personalizamos una solución a tu necesidad </p>
                 <p className="text-[#fe7604] text-center font-bold mt-5 text-[2.1rem]">¡Sólo dinos que estás buscando!</p>
                 <div className="bg-[#fe7604] w-[98.5vw] h-[30vh] absolute z-0 mt-[250px]"></div>
-                <Image src="/aplicaciones.png" alt="" width={1200} height={1200} className="mx-auto relative mt-10 z-10 scale-90" />
+                <Image src="/aplicaciones.png" alt="" width={1200} height={1200} className="mx-auto relative mt-2 z-10 ml-[20vw] scale-90" />
 
             </div>
 
