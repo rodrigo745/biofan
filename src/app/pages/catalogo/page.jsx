@@ -20,7 +20,7 @@ export default function Catalogo(){
     ]
     return(
         <div className="">
-            <h2 className="text-[#1d4674] z-10 relative text-3xl lg:text-7xl font-bold text-center mt-20 roboto">CATÁLOGOS</h2>
+            <h2 className="text-[#1d4674] z-10 relative text-3xl lg:text-7xl font-bold text-center mt-20 roboto text-border ">CATÁLOGOS</h2>
 
             <div className="flex relative flex-col lg:flex z-10 lg:flex-row justify-center w-[100%] h-full lg:h-[72vh] mt-10 lg:mt-20 lg:px-36">
                  <div className="w-full lg:w[30%] flex flex-col items-center mb-14 lg:mb-0 text-center">
@@ -51,62 +51,53 @@ export default function Catalogo(){
 
             {/* Catalogo */}
             <div className="w-full h-full flex bg-[#e6e6d4] flex-col items-center mb-20 lg:mt-0 lg:mb-20 lg:pb-20">
-                <h2 className="text-[#1d4674] roboto text-3xl lg:text-5xl font-bold mt-20 mb-10">CATÁLOGOS EQUIPO</h2>
+                <h2 className="text-[#1d4674] roboto text-3xl lg:text-5xl font-bold mt-20 mb-10 text-border">CATÁLOGOS EQUIPO</h2>
                 <div className="flex justify-around w-[90vw] lg:space-x-2">
-                    <div className="hover:scale-110 hover:cursor-pointer transition">
+                    <a href="https://drive.google.com/file/d/1Ki7CyKthvqeaqi9FNc3ZcT8E5_Hu-0mI/view" target="_blank" className="hover:scale-110 hover:cursor-pointer transition">
                         <Image src="/catalogo/4.png" width={840} height={400} alt="" />
                         <p className="text-center mx-auto relative left-[10px] bg-[#1d4674] p-2 w-fit text-white px-5 rounded-lg text-lg font-bold">INDUSTRIAL HDS</p>
-                    </div>
-                    <div className="hover:scale-110 hover:cursor-pointer transition mt-7 pr-20">
+                    </a>
+                    <a href="https://drive.google.com/file/d/1OlPHEvzJrw-6v9wnU-D-UObDvGKzgxa_/view" target="_blank" className="hover:scale-110 hover:cursor-pointer transition mt-7 pr-20">
                         <Image src="/catalogo/5.png" width={580} height={400} alt="" />
                         <p className="text-center mx-auto relative left-[-3px] mt-6 bg-[#1d4674] p-2 w-fit text-white px-5 rounded-lg text-lg font-bold">COMERCIAL HDS</p>
-                    </div>
+                    </a>
 
                 </div>
+                <div className="mt-20 flex justify-around w-[70%]">
+                    <a href="https://drive.google.com/file/d/17mlYpaSW5fbvGVhbO41DPJDdMJTjhJ-f/view" target="_blank">
+                        <Image  src="/catalogo/equipo/1.png" width={200} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                    </a>
+                        <Image  src="/catalogo/equipo/2.png" width={200} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                    
+                    <a href="https://drive.google.com/file/d/11ntNmLfsbYPB-WRnDDeB8tM8sCIw4skm/view" target="_blank">
+                        <Image  src="/catalogo/equipo/3.png" width={200} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                    </a>
+                </div>
+                <div className="mt-14 flex justify-around ml-24 space-x-6">
+                    <a href="https://drive.google.com/file/d/1EucUUMKqkPC5SThwGCKjys6gmz0UbGRI/view" target="_blank">
+                        <Image  src="/catalogo/equipo/4.png" width={400} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1KW3ujzYN3yathDYXlkRaEKrNGa0zs95g/view" target="_blank">
+                        <Image  src="/catalogo/equipo/5.png" width={400} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                    </a>
+                </div>
+
             </div>
-            <div className="flex flex-col w-full justify-center items-center pb-20 mb-20">
-            <div className="mt-8 h-full w-[69vw] grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-6 gap-y-10">
-                    
-                    {
-                        informacion.map((e, index)=> (
-                            <div key={index} className="flex flex-col items-center hover:scale-125 transition cursor-pointer">
-                                <div className="w-full h-full mb-4">
-                                    <Image src={e.img} width={200} height={200} alt="" className={`
-                                    ${index === 0 && "pt-4 scale-95"}
-                                    ${index === 1 && "pt-8 scale-95"}
-                                    ${index === 2 && "pt-8 scale-95"}
-                                    ${index === 3 && "pt-12 scale-[1.4]"}
-                                    ${index === 4 && "pt-14 ml-6 scale-[1.4]"}
-                                    ${index === 5 && "pt-4 "}
-                                    ${index === 7 && "scale-110 mt-12"}
-                                    `} />
-                                </div>
-                            </div>
-                        ))
-                    }
+            <div className="grid grid-cols-3 gap-32 w-[59%] mx-auto items-end mb-20">
+                <Image  src="/catalogo/items/1.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/items/2.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/items/3.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/items/4.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <a href="https://drive.google.com/file/d/1AP-DubM7bC70qAOQ7q1yUCgEH0xU7eRA/view" target="_blank">
+                    <Image  src="/catalogo/items/5.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                </a>
+                <Image  src="/catalogo/items/6.png" width={300} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/items/7.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/items/8.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <a href="https://drive.google.com/file/d/10uH_qife1JBbpLE1FWtVkp9f3xHk--Ac/view" target="_blank">
+                    <Image  src="/catalogo/items/9.png" width={380} height={300} className="w-fit hover:scale-[1.15] transition cursor-pointer scale-110 mb-4" alt=""/>
+                </a>
 
-                </div>
-                <div className="mt-8 h-full grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-x-6 gap-y-10">
-                    
-                    {
-                        informacion2.map((e, index)=> (
-                            <div key={index} className="flex flex-col items-center hover:scale-125 transition cursor-pointer">
-                                <div className="w-full h-full mb-4">
-                                    <Image src={e.img} width={200} height={200} alt="" className={`
-                                    ${index === 1 && "pt-2 "}
-                                    ${index === 0 && "pt-4 "}
-                                    ${index === 2 && "pt-2 "}
-                                    ${index === 3 && "pt-0 "}
-                                    ${index === 4 && "pt-0"}
-                                    ${index === 5 && "pt-3"}
-                                    ${index === 7 && "scale-110 mt-12"}
-                                    `} />
-                                </div>
-                            </div>
-                        ))
-                    }
-
-                </div>
             </div>
         </div>
     )

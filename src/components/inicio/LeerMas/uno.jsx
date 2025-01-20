@@ -112,16 +112,16 @@ export default function Uno() {
                 </div>
                 </div>
             </div>
-            <div className="bg-[#e6e6d4] py-16 flex space-x-12 px-[8%] mb-10">
-                <div className="w-[70%]" >
+            <div className="bg-[#e6e6d4] py-16 flex space-x-12 px-[8%] mb-10 ">
+                <div className="w-[70%] ml-16" >
                     <p style={{lineHeight: 1.6}} className="text-[#fe7604] font-bold text-xl">YA SEA QUE TENGA UN COMPLEJO INDUSTRIAL O UNA PEQUEÑA TIENDA, NUESTROS EXPERTOS EN FLUJO DE AIRE ESTÁN AQUÍ PARA HACER SU VIDA MÁS FÁCIL, MÁS CÓMODA Y MENOS COSTOSA.</p>
                     <p style={{lineHeight: 1.6}} className="text-xl">Envíenos un correo electrónico a: <span className="text-[#1d4674] font-bold">info@bio-fan.com</span> , o solicite una cotización para obtener más información sobre la solución de confort más eficiente para usted. </p>
                 </div>
                 <Link href="/pages/correo" className="bg-[#fe7604] h-10 my-auto rounded-md font-bold px-10 py-2 text-white">Obtenga una cotización</Link>
             </div>
-            <div className="mb-10">
+            <div className="mb-0">
                 <p className="text-[#1d4674] text-2xl font-bold text-center">CONOZCA SU NUEVO VENTILADOR INDUSTRIAL O COMERCIAL</p>
-                <p className="text-2xl font-bold text-center">¿CUAL ES SU TIPO DE EDIFICIO?</p>
+                <p className="text-2xl text-[#fe7604] font-bold text-center">¿CUAL ES SU TIPO DE EDIFICIO?</p>
             </div>
 
             <div className="h-[40vh] w-[99vw] m-0 p-0 flex justify-center items-center ">

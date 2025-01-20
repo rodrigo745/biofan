@@ -13,19 +13,16 @@ export default function Productos(){
         {titulo: "SERIE HDB", descripcion: "VENTILADOR DE PARED", img: "/productos/5.png"},
         {titulo: "SERIE HDS/L", descripcion: "VENTILADOR INDUSTRIAL VERTICAL",  img: "/productos/6.jpg"},
         {titulo: "SERIE HDS/L", descripcion: "VENTILADOR COMERCIAL VERTICAL",  img: "/productos/7.jpg"},
-        {titulo: "EVAPORATIVOS", descripcion: "INDUSTRIAL-COMERCIAL",  img: "/productos/8.png"},
+        {titulo: "RECUBRIMIENTO SOLAR", descripcion: "",  img: "/productos/9.png"},
     ]
         
     const recu = [{titulo: "RECUBRIMIENTO SOLAR", descripcion: "",  img: "/productos/8.png"}]
 
     return(
-        <div className="w-full bg-[#e6e6d4]">
-            <h1 className="pt-20 pb-10 text-center lg:text-7xl font-bold text-[#1d4674] roboto">VENTILADORES {<br></br>} BIOFAN</h1>
-            <p className="text-center  mb-10 w-[57%] mx-auto lg:text-3xl helvetica">Estamos comprometidos a proporcionar soluciones de ventilación que superen las expectativas y que se adapten perfectamente a las necesidades específicas de cada cliente, ofreciendo tranquilidad y seguridad en cada uso.</p>
-            <div className="w-full flex  mb-16">
-                <button className="text-center text-lg mx-auto w-[120px] font-semibold bg-[#fe7604] text-white px-3 py-1">Leer más</button>
-            </div>
-            <div className="w-full h-[260vh] lg:h-[77vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-6 px-10" >
+        <div className="w-full ">
+            <h1 className="pt-20 pb-10 text-center lg:text-6xl font-bold text-[#1d4674] ">Ventiladores BIOFAN</h1>
+           
+            <div className="w-full h-[260vh] bg-[#e6e6d4] py-10 lg:h-[85vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-6 px-10" >
                 {
                     informacion.map((e, index)=> (
                         <Link href={`/pages/productos/${index+1}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
@@ -42,10 +39,10 @@ export default function Productos(){
                     ))
                 }
             </div>
-            <div className="w-full h-[260vh] lg:h-[75vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-10 px-10 mb-12" id="producto-2">
+            <div className="w-full h-[260vh] bg-[#e6e6d4] py-10 lg:h-[85vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-10 px-10 mb-12" id="producto-2">
                 {
                     informacion2.map((e, index)=> (
-                        <Link href={index+5 == 8 ? "/pages/evaporativos" : `productos/${index+5}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
+                        <Link href={index+5 == 8 ? "/pages/inicio/8" : `productos/${index+5}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
                         flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
                             <div className={`py-2 px-2 w-[80%] text-center text-white         
@@ -63,40 +60,40 @@ export default function Productos(){
                     ))
                 }
             </div>
-            <div className="bg-[#e6e6d4] w-full h-[260vh] lg:h-[75vh] px-10 flex justify-between mb-24">
-                <Link href={"/pages/evaporativos"} className={`w-[100%] lg:w-[23%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
-                            <Image src="/productos/8.png" width={400} height={400} alt="producto" className="absolute w-full h-full" />
-                            <div className={`py-3 px-8 w-[90%] text-center text-white         
+            <div className="bg-[#e6e6d4] w-full h-[260vh] lg:h-[75vh] px-10 flex justify-between mb-20 p-10 space-x-14">
+                <Link href={"/pages/evaporativos"} className={`w-[100%] lg:w-[50%] h-full 
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-[1.03] transition cursor-pointer`}>
+                            <Image src="/productos/8.png" width={800} height={800} alt="producto" className="absolute w-full h-full" />
+                            <div className={`py-3  w-fit px-10 text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
                                 bg-[#1d4674]
                             `}>
                                 <h4 className={`text-2xl lg:text-4xl font-bold ${"lg:text-[36px]"}}
                                 `}>EVAPORATIVOS</h4>
-                                <p className="text-2xl font-bold">INDUSTRIAL- COMERCIAL</p>
+                                
                             </div>
                         </Link>
-                        <Link href={""} className={`w-[100%] lg:w-[43%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
-                            <Image src="/productos/9.jpg" width={400} height={400} alt="producto" className="absolute w-full h-full" />
-                            <div className={`py-3 px-8 w-[50%] text-center text-white         
-                                rounded-[35px] z-30 mb-10 relative bottom-[-60px] ml-40
-                                bg-[#1d4674]
+                        <Link href="/pages/inicio/9" className={`w-[100%] lg:w-[50%] h-full 
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-[1.03] transition cursor-pointer`}>
+                            <Image src="/productos/11.png" width={800} height={800} alt="producto" className="absolute w-full h-full" />
+                            <div className={`py-3 px-12 w-fit text-center text-white         
+                                rounded-[35px] z-30 mb-10 relative bottom-[-60px] 
+                                bg-[#1d4674] mx-auto
                             `}>
-                                <h4 className={`text-2xl lg:text-4xl font-bold ${"lg:text-[42px]"}}
-                                `}>RECUBRIMIENTO SOLAR</h4>
+                                <h4 className={`text-2xl text-center lg:text-4xl font-bold ${"lg:text-[42px]"}}
+                                `}>Equipos de extracción</h4>
                             </div>
                         </Link>
             </div>
 
 
             <div className="bg-white pb-52 ">
-                <h4 className="text-center w-[55%] text-[#fe7604] font-semibold pt-20 pb-20 mx-auto text-3xl helvetica">Diseñados para ofrecer un rendimiento óptimo en entornos exigentes, nuestros ventiladores son sinónimo de calidad y confianza.</h4>
+                <h4 className="text-center w-[70%] text-[#fe7604] font-semibold  pb-32 mx-auto text-3xl helvetica">Estamos comprometidos a proporcionar soluciones de ventilación que superen las expectativas y que se adapten perfectamente a las necesidades específicas de cada cliente, ofreciendo tranquilidad y seguridad en cada uso.</h4>
 
                 <div className=" flex justify-evenly">
-                    <div className=" w-[490px] h-[370px] brxe-rgcaln mt-28" id="brxe-rgcaln">
+                    <div className=" w-[485px] h-[320px] brxe-rgcaln mt-28" id="brxe-rgcaln">
                         <div className="contenido transition ">
-                            <Image src="/productos/1.jpg" className="rodarImg -rotate-12 hover:-rotate-0 transition duration-[0.6s] scale-125" width={390} height={400} alt="" />
+                            <Image src="/productos/100.png" className="rodarImg -rotate-12 hover:-rotate-0 transition duration-[0.6s] scale-125" width={390} height={400} alt="" />
                         </div>
                     </div>
                     <div className=" w-[430px] h-[455px] brxe-rgcaln" id="brxe-rgcaln2">

@@ -15,7 +15,8 @@ export default function Header() {
         {titulo: "VENTILADOR PARED", descripcion: "Resuelve entornos complejos con espacios de ventilación limitados.", serie: "HDB", img: "/inicio/slider/06.png", frase: ["-6°C","Hasta 6° menos en verano"]},
         {titulo: "VENTILADOR VERTICAL", descripcion: "Potente flujo de aire, de funcionamiento silencioso, posicionamiento estratégico, durabilidad y eficiencia energética.", serie: "HDS/L SERIE", img: "/inicio/slider/07.png", frase: ["20%","Más de aire fresco"]},
         {titulo: "EVAPORATIVOS", descripcion: "Dos presentaciones de Evaporativos Industrial y Comercial, ambas se basan en el principio físico del enfriamiento adiabático.", img: "/inicio/slider/08.png", frase: ["1","Climatización \n agradable y ecológica","/inicio/aire.png"]},
-        {titulo: "RECUBRIMIENTO SUPERIOR SOLAR", descripcion: "Pintura térmica solución innovadora en el sector industrial, para gestionar el calor.", img: "/inicio/slider/09.png", frase: ""}
+        {titulo: "RECUBRIMIENTO SUPERIOR SOLAR", descripcion: "Pintura térmica solución innovadora en el sector industrial, para gestionar el calor.", img: "/inicio/slider/09.png", frase: ""},
+        {titulo: "EQUIPOS DE EXTRACCIÓN", descripcion: "Dos presentaciones de Evaporativos Industrial y Comercial, ambas se basan en el principio físico del enfriamiento adiabático.", img: "/inicio/slider/10.png", frase: ""}
     ]
 
     const [ver, setVer] = useState(informacion[0]);
@@ -169,12 +170,18 @@ export default function Header() {
                                     <h2 className={`text-2xl w-[60%] lg:w-[180%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
                                     :
                                     <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-[5.5rem] font-bold 
-                                        ${e.titulo === "VENTILADOR DE TECHO INDUSTRIAL" && "lg:w-[190%]"}`} style={{lineHeight: 1}}>{e.titulo}</h2>
+                                        ${e.titulo === "VENTILADOR DE TECHO INDUSTRIAL" && "lg:w-[190%]"}
+                                        ${e.titulo == "EQUIPOS DE EXTRACCIÓN" && "lg:w-[202%]"}
+                                        
+                                        `} 
+                                        style={{lineHeight: 1}}
+                                        >{e.titulo}</h2>
 
                                 }
                                 <h5 className={`text-md w-[50%] lg:w-[132%] text-justify lg:text-3xl mb-6 font-medium mt-2 helvetica ${e.titulo == "VENTILADOR MOVIL 45°" && "lg:w-[150%]"}
                                 ${e.titulo == "RECUBRIMIENTO SUPERIOR SOLAR" && "lg:w-[150%]"}
                                 ${e.titulo == "VENTILADOR INDUSTRIAL" && "lg:w-[170%]"}
+
                                 `}>{e.descripcion}</h5>
                                 <Link href={`/pages/inicio/${index}`} className=" py-2 px-5 font-medium  rounded-lg bg-[#eb5347] text-white">Aprende más</Link>
                             </div>
@@ -198,6 +205,7 @@ export default function Header() {
             'w-[0.729vw] h-[1.396vh]',
             'w-[0.833vw] h-[1.691vh]',
             'w-[0.937vw] h-[1.867vh]',
+            'w-[1.042vw] h-[2.052vh]',
             'w-[1.042vw] h-[2.052vh]',
             'w-[0.937vw] h-[1.867vh]',
             'w-[0.833vw] h-[1.691vh]',

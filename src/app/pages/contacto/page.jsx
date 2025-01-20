@@ -46,9 +46,9 @@ export default function Contacto(){
                 </div>
             </div>
             </div>
-            <div className="w-full h-[70vh] z-20">
-            <div className="w-[99vw] h-[100vh] bg-[#0000004f] absolute top-0 left-0 z-10"></div>
-            <iframe  className="w-full h-[95%] z-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d767806.8078995544!2d2.06433509470355!3d42.04128362267662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae6e7c4bdd367%3A0x98e77127ac001baf!2sUniversidad%20de%20Girona!5e1!3m2!1ses-419!2sar!4v1733112553227!5m2!1ses-419!2sar" width="800" height="600" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <div className="w-full h-[46vh] z-20">
+            <div className="w-[99vw] h-[40vh] bg-[#0000004f] absolute top-0 left-0 z-10"></div>
+                <Image src="/mapa.png" className="w-full mt-10 h-[400px]" width={2300} height={1200} alt=""/>
             </div>
         </div>
     )

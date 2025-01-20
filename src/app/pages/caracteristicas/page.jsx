@@ -8,34 +8,59 @@ export default function Caracteristicas(){
         <div className="w-full">
             <div className="w-full h-[100%] mt-1">
                 <div className="w-full bg-[#1d4674] p-10 pb-3 pt-20 ">
-                    <div className="flex w-[89%] m-auto space-x-12 h-[500px]">
-                        <h3 className="text-4xl lg:text-7xl w-[80%] text-center pt-10 lg:mt-0 sombra-texto3 text-white roboto font-semibold ">BENEFICIOS</h3>
+                    <div className="flex w-[89%] m-auto space-x-12 h-[500px] ml-20">
+                        <h3 className="text-4xl lg:text-7xl w-[80%] text-center relative left-[-80px] pt-10 lg:mt-0 sombra-texto3 text-white roboto font-semibold ">BENEFICIOS</h3>
                         <p className="text-2xl font-medium text-white text-justify pt-2 w-[100%]">Uno de los principales beneficios de los ventiladores BIOFAN es que consumen menos energía que los ventiladores tradicionales de alta velocidad debido a su menor velocidad de rotación, lo que se traduce en menores costos energéticos y una menor huella de carbono. </p>
                     </div>
                 </div>
 
 
-                <div className="flex flex-col lg:flex lg:flex-row justify-center w-full lg:space-x-0 items-center lg:space-y-0 px-20 absolute mt-[-290px]">
-                    <Link href="/pages/beneficios/1">
-                        <Image src="/caracteristicas/1.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                <div className="flex flex-col lg:flex lg:flex-row justify-evenly w-full lg:space-x-2 items-center lg:space-y-0 px-20 absolute mt-[-290px]" >
+                    <Link href="/pages/beneficios/1" className="bg-white p-10 rounded-full text-center w-[18%]">
+                        <p className="px-2 hover:scale-105 transition cursor-pointer text-2xl font-bold text-[#1d4674] mb-4">Sensación térmica</p>
+                        <button className="bg-red-500 text-white px-5 py-1 rounded-md">Leer más</button>
                     </Link>
-                    <Link href="/pages/beneficios/2">
-                        <Image src="/caracteristicas/2.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    <Link href="/pages/beneficios/2" className="bg-white p-10 rounded-full text-center w-[18%]">
+                        <p className="px-2 hover:scale-105 transition cursor-pointer text-2xl font-bold text-[#1d4674] mb-4">Estratificación y estrés térmico</p>
+                        <button className="bg-red-500 text-white px-5 py-1 rounded-md">Leer más</button>
                     </Link>    
-                    <Link href="/pages/beneficios/3">
-                        <Image src="/caracteristicas/3.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    <Link href="/pages/beneficios/3" className="bg-white p-10 rounded-full text-center w-[19%]">
+                        <p className="px-2 hover:scale-105 transition cursor-pointer text-2xl font-bold  text-[#1d4674] mb-4">Impacto positivo al medio ambiente</p>
+                        <button className="bg-red-500 text-white px-5 py-1 rounded-md">Leer más</button>
                     </Link>    
-                    <Link href="/pages/beneficios/4">    
-                        <Image src="/caracteristicas/6.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    <Link href="/pages/beneficios/4" className="bg-white p-10 rounded-full text-center w-[18%]">    
+                        <p className="px-2 hover:scale-105 transition cursor-pointer text-2xl font-bold text-[#1d4674] mb-4" >Eficiencia energética</p>
+                        <button className="bg-red-500 text-white px-5 py-1 rounded-md">Leer más</button>
                     </Link>    
                 </div>
-                
-                <div className="mt-[400px] flex w-full">
+                <div className="overflow-hidden relative w-full  mt-14">
+                    <div className="flex animate-slideCar space-x-28">
+
+                        <Image src="/caracteristicas/reel/1.png" className="object-cover" width={200} height={200} alt="" />
+                        <Image src="/caracteristicas/reel/2.png" className="object-cover" width={200} height={200} alt="" />
+                        <Image src="/caracteristicas/reel/3.png" className="" width={200} height={200} alt="" />
+                        <Image src="/caracteristicas/reel/4.png" className="object-cover" width={200} height={200} alt="" />
+                        <Image src="/caracteristicas/reel/5.png" className="object-cover" width={200} height={200} alt="" />
+                        <Image src="/caracteristicas/reel/6.png" className="object-cover" width={200} height={200} alt="" />
+
+                        <Image src="/caracteristicas/reel/1.png" className="object-cover" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/2.png" className="object-cover" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/3.png" className="" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/4.png" className="object-cover" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/5.png" className="object-cover" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/6.png" className="object-cover" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/1.png" className="object-cover" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/2.png" className="object-cover" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/3.png" className="" width={200} height={300} alt="" />
+                        <Image src="/caracteristicas/reel/4.png" className="object-cover" width={200} height={300} alt="" />
+                    </div>
+                </div>
+                <div className="mt-[100px] flex w-full">
                     <div className="flex flex-col w-[30%]">
-                        <div style={{lineHeight: 1.3}} className="w-[100%] ml-8 pt-40 sombra-texto4 m-auto text-5xl text-center roboto">
+                        <div style={{lineHeight: 1.3}} className="w-[100%] ml-8 pt-24 sombra-texto4 m-auto text-5xl text-center roboto font-bold text-[#1d4674]">
                         DIAGRAMA DE EXPERIENCIA CON VENTILADOR BIOFAN
                         </div>
-                        <div className="text-3xl px-20 py-20 bg-[#f0c50b] text-white font-medium text-center w-[120%]  m-auto mt-[70px]">Diseñamos propuestas basadas en las proporciones y preferencias de nuestros clientes</div>
+                        <div className="text-3xl px-20 py-24 bg-[#f0c50b] text-white font-medium text-center w-[120%]  m-auto mt-[70px]">Diseñamos propuestas basadas en las proporciones y preferencias de nuestros clientes</div>
                     </div>
                     <div className="ml-20 bg-[#f0c50b] p-10 px-24">
                         <video width="1200" height="860" autoPlay loop>
@@ -61,20 +86,31 @@ export default function Caracteristicas(){
                         </video>
                     </div>
                 </div>
-                <div className="w-full h-[100px] bg-white relative top-[-70px]"></div>
-                <div className=" bg-[#fe7604] pb-20 pt-28 mt-[0px]">
-                    <h2 className="text-2xl lg:text-6xl sombra-texto3 roboto font-bold text-white text-center">CARACTERISTICAS</h2>
-                    <div className="flex flex-col lg:flex lg:flex-row justify-center w-full mt-20 lg:space-x-0 items-center lg:space-y-0 px-20">
-
-                    <Image src="/caracteristicas/11.jpg" width={290} height={1000} alt="" className="px-8 hover:scale-105 transition cursor-pointer"/>
-                    <div className="grid grid-cols-2 gap-y-10">
-                        <Image src="/caracteristicas/12.jpg" width={290} height={1000} alt="" className="px-8 hover:scale-105  transition cursor-pointer"/>
-                        <Image src="/caracteristicas/13.jpg" width={290} height={1000} alt="" className="px-8 hover:scale-105 transition cursor-pointer"/>
-                        <Image src="/caracteristicas/14.jpg" width={290} height={1000} alt="" className="px-8 hover:scale-105 transition cursor-pointer"/>
-                        <Image src="/caracteristicas/15.jpg" width={290} height={1000} alt="" className="px-8 hover:scale-105 transition cursor-pointer"/>
-                    </div>
-                    <Image src="/caracteristicas/16.jpg" width={290} height={1000} alt="" className="px-8 hover:scale-105 transition cursor-pointer"/>
-
+                <div className="w-full h-[100px] bg-white relative top-[-40px]"></div>
+                <div className="  pb-20 mt-[0px]">
+                    <h2 className="text-2xl lg:text-6xl text-[#1d4674] sombra-texto3 roboto font-bold  text-center">CARACTERISTICAS</h2>
+                    
+                    <div className="overflow-hidden relative w-full  mt-14 ">
+                        <div className="flex animate-slideCar space-x-28 ">
+                            <Image src="/caracteristicas/1.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/2.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/3.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/4.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/5.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/6.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/1.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/2.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/3.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/4.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/5.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/6.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/1.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/2.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/3.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/4.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/5.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/6.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                        </div>
                     </div>
                 </div>
 

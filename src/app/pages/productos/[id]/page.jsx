@@ -46,7 +46,7 @@ export default function Producto({params}){
                 </div>
                 <div className="lg:w-[33%] h-[66%] my-auto relative  flex justify-center items-center">
                     
-                    <Image className="w-full h-full " src={imagen} width={2000} height={2000} alt="producto" />
+                    <Image className="w-[80%] h-full " src={imagen} width={2000} height={2000} alt="producto" />
                     
                 </div>
                 <div className="lg:w-[46%]">
@@ -58,12 +58,17 @@ export default function Producto({params}){
                         ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] text-white"}
                         ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] text-white"}
                         ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131] text-white"} 
-                        ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#f0c50b] text-white"}
+                        ${e.titulo === "Ventilador Móvil de 45°" && "bg-[#f0c50b] text-white"}
                         ${e.titulo === "Ventilador de Pared" && "bg-[#1d4674] text-white"}
                         ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] text-white"}
-                        ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "bg-[#fe7604] text-white"}
+                        ${e.titulo === "Military Cool Mod-260" && "bg-[#fe7604] text-white"}
                         ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#e6e6d4] text-[#090d12]"}
-                        ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" && "bg-[#fe7604] text-white"}`} 
+                        ${e.titulo === "Military Cool Mod-120" && "bg-[#fe7604] text-white"}
+                        ${e.titulo === "EVAPORATIVO INDUSTRIAL Serie - OFS PRO" && "bg-[#fe7604] text-white"}
+                        ${e.titulo === "EVAPORATIVO INDUSTRIAL Mod-335L" && "bg-[#fe7604] text-white"}
+                        ${e.titulo === "Duct Cooler" && "bg-[#fe7604] text-white"}
+                        ${e.titulo === "Extractor de 6 palas" && "bg-[#ff3131] text-white"}                         
+                        ${e.titulo === "Weather Fighter Mod-150" && "bg-[#fe7604] text-white"}`} 
                         >Enviar consulta</button>
                     <p className="text-xl helvetica text-justify" style={{lineHeight: 1.8}} dangerouslySetInnerHTML={{__html: e.descripcion1}} />
                     {e.rango != "no" && <p className="w-full mt-8 text-xl helvetica text-justify"><strong>Rango de diámetro del ventilador:</strong> <br /><span dangerouslySetInnerHTML={{__html: e.rango}}></span></p>}
@@ -88,9 +93,12 @@ export default function Producto({params}){
                     <>
                         {e.descripcion2.map((ev,index) => (
                             <p key={index} className={`text-xl text-justify px-7 helvetica
-                                ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" && "hidden" }
+                                ${e.titulo === "Weather Fighter Mod-150" && "hidden" }
                                 `} style={{lineHeight: 1.9}} dangerouslySetInnerHTML={{ __html: ev }} />
                         ))}
+
+                       
+
                         {
                             e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" &&
                             <div className="flex">
@@ -107,15 +115,15 @@ export default function Producto({params}){
                             </div>
                         }
                         {
-                            e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" &&
+                            e.titulo === "Weather Fighter Mod-150" &&
                             <div className="flex">   
                                 <div className="w-[70%]">
                                     {e.descripcion2.map((ev,index) => (
-                                        <p key={index} className="text-xl text-justify px-7 helvetica" style={{lineHeight: 1.9}} dangerouslySetInnerHTML={{ __html: ev }} />
+                                        <p key={index} className="text-lg text-justify px-7 helvetica" style={{lineHeight: 1.9}} dangerouslySetInnerHTML={{ __html: ev }} />
                                     ))}
                                 </div>
                                 <div>
-                                    <Image src="/productos/11/12.jpg" className="mt-7" width={400} height={300} alt="" />
+                                    <Image src="/productos/11/66.png" className="mt-7 ml-20" width={300} height={300} alt="" />
                                 </div>
                             </div>
                         }
@@ -290,6 +298,48 @@ export default function Producto({params}){
                     
                   </table>
                   }
+                  {
+                    e.titulo === "Weather Fighter Mod-150" &&
+                    <div>
+                        <Image src="/productos/10/7.png" className="ml-20 mt-20" height={500} width={400} alt="" />
+                    </div>
+                  }
+                  {
+                    e.titulo === "Military Cool Mod-260" &&
+                    <div>
+                        <Image src="/productos/11/16.png" className="ml-20 mt-20" height={500} width={400} alt="" />
+                    </div>
+                  }
+                  {
+                    e.titulo === "Military Cool Mod-120" &&
+                    <div>
+                        <Image src="/productos/12/7.png" className="ml-20 mt-20" height={500} width={400} alt="" />
+                    </div>
+                  }
+                  {
+                    e.titulo === "EVAPORATIVO INDUSTRIAL Mod-335L" &&
+                    <div>
+                        <Image src="/productos/13/14.png" className="ml-20 mt-10" height={600} width={800} alt="" />
+                    </div>
+                  }
+                  {
+                    e.titulo === "EVAPORATIVO INDUSTRIAL Serie - OFS PRO" && 
+                    <div className="h-[80vh]">
+                        <Image src="/productos/14/15.png" className="absolute w-[60%] left-[150px]" width={2500} height={500} alt="" />
+                    </div>
+                  }
+                  {
+                    e.titulo === "Extractor de 6 palas" && 
+                    <div className="h-[80vh]">
+                        <Image src="/productos/16/15.png" className="absolute w-[60%] left-[150px]" width={2500} height={500} alt="" />
+                    </div>
+                  }
+                  {
+                    e.titulo === "Extractor de 7 palas" && 
+                    <div className="h-[80vh]">
+                        <Image src="/productos/16/15.png" className="absolute w-[60%] left-[150px]" width={2500} height={500} alt="" />
+                    </div>
+                  }
                   </>
                         }
                     {
@@ -317,6 +367,7 @@ export default function Producto({params}){
                             <Image src="/productos/10/12.jpg" width={700} height={600} alt="" className="mt-10 ml-10" />
                         </div>
                     }
+                    
                   </div>
                 }
                 {
@@ -334,9 +385,7 @@ export default function Producto({params}){
                             <button className="py-2 w-full rounded-md mt-3 text-xl text-white bg-[#fe7604]">Enviar</button>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center border-l-2  pl-32 pr-40">
-                        <button className="px-10 p-2 bg-[#1e4675] text-white rounded-md text-xl">Descargar PDF</button>
-                    </div>
+                    
                     </div>
                 }
                     
@@ -344,147 +393,7 @@ export default function Producto({params}){
                     
                     
             </div>
-            <div className={`flex  mt-28 pb-52 px-28
-                ${e.titulo === "Ventilador Móvil Industrial" ? "justify-between px-0" : "justify-evenly"}
-                ${e.titulo === "Ventilador Industrial Vertical" && " grid  grid-cols-3 gap-y-8 mx-auto w-[66vw] h-[800px]"}
-                ${e.titulo === "Ventilador Comercial Vertical" && " grid-cols-4 gap-x-9 gap-y-8 mx-auto w-[90vw] h-[800px] hidden"}
-                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "h-[81vh]"}
-                    ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" && "hidden"}
-                
-                `}>
-                <div className={`absolute z-0  h-[460px]  rounded-md
-                    ${e.titulo === "Ventilador de Techo Industrial" && "mt-[8%] bg-[#fe7604] w-[80%]"}   
-                    ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] h-[360px] w-[80%] mt-[-4%]"}   
-                    ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131] w-[99%] ml-[-102px] mt-[-3%] h-[350px]"} 
-                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#fecb17] relative w-[80%] ml-[-40%] mt-[-9vh] h-[340px]"}
-                    ${e.titulo === "Ventilador de Pared" && "bg-[#1e4675] w-[99vw] mt-[-5%] h-[345px]"}
-                    ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#ddddcb] w-[51vw] mt-[-3vh] ml-[-22%] h-[550px]"}
-                    ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] w-[56vw] mt-[-1.3%] ml-[-9%] h-[480px]"}
-                    ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "bg-[#1e4675] w-[99vw] mt-[-80px] h-[99vh]"}
-
-                    `} ></div>
-                    {
-                        e.titulo === "Ventilador Móvil de 45° Industrial" &&
-                        <div className={`z-0 absolute rounded-md bg-[#fecb17] w-[56%] ml-[42%] mt-[13%] h-[360px] `} ></div>
-                    }
-                    {
-                        e.titulo === "Ventilador Industrial Vertical" && 
-                        <div className={`z-0 absolute rounded-md bg-[#ddddcc] w-[54vw] mt-[14%] ml-[22%] h-[550px] `} ></div>
-                    }
-                    {
-                        e.titulo === "Ventilador Comercial Vertical" && 
-                        <div className={`z-0 absolute rounded-md bg-[#fe7604] w-[53vw] mt-[14%] ml-[35%] h-[430px] `} ></div>
-                    }
-                <Image src={e.img2[0]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4 
-                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] hover:border-[#fe7604]" } 
-
-                    ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] hover:border-[#f0c50b]"} 
-                    ${e.titulo === "Ventilador Móvil Industrial" && " hover:border-[#ff3131] bg-[#ff3131] ml-20"}
-                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[480px] h-[330px] hover:scale-[1.6] border-[#f0c50b] scale-150 relative top-32 right-[40%] transition"}
-                    ${e.titulo === "Ventilador de Pared" && "mt-20 mr-40 hover:border-[#1d4675]"}
-                     ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0 hover:border-none w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none  w-[400px] rounded-2xl"}
-                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "hover:border-none hover:scale-[1] w-[32vw] absolute  pt-0 rounded-2xl z-40 mt-[-42px] left-0 ml-[90px]"}
-                    `}/>
-                <Image src={e.img2[1]} width={530} height={530} alt=""  className={`absolute z-20 mt-20 border-4 hover:cursor-pointer 
-                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] border-[#fe7604]" } 
-                    ${e.titulo === "Ventilador de Techo Comercial" && "border-[#f0c50b] "}
-                    ${e.titulo === "Ventilador Móvil Industrial" && "border-[#ff3131] bg-[#ff3131] ml-[23.4%] mt-[7%] w-[450px] h-[450px]"}
-                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[500px] scale-125 ml-[30%] mt-[-20px] border-[#f0c50b]"}
-                    ${e.titulo === "Ventilador de Pared" && "w-[600px] mt-[-20px] border-[#1d4675]"}
-                     ${e.titulo === "Ventilador Industrial Vertical" && "hover:border-4 hover:border-[#fe7604] border-[0px] hover:scale-105 transition  mt-[0px] relative hover:border-none w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none border-[0px] hover:scale-105 transition  mt-[0px] relative  w-[400px] rounded-2xl"}
-                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "border-none hover:scale-[1] w-[60vw] absolute  pt-0 rounded-2xl z-40 mt-[-42px] right-0 mr-20"}
-                    `} 
-                    style={{animationDuration: "10s"}} />
-                {
-                    e.titulo != "Ventilador Móvil de 45° Industrial" &&
-                <Image src={e.img2[2]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer relative bottom-10 hover:border-4 
-                    
-                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] hover:border-[#fe7604]" } 
-
-                    ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] hover:border-[#f0c50b]" } 
-                    ${e.titulo === "Ventilador Móvil Industrial" && "bottom-[0px] hover:border-[#ff3131] bg-[#ff3131] mr-[25%]"}
-                    ${e.titulo === "Ventilador de Pared" && "mt-[120px] ml-52  hover:border-[#1d4675]"}
-                    ${e.titulo === "Ventilador Industrial Vertical" && "hover:border-none hover:border-0  mt-[0px] bottom-[0px]  w-[300px]"}
-                    ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none hover:border-0  mt-[0px] bottom-[0px]  w-[400px] rounded-2xl"}
-                    ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" && "hidden"}
-                    `}/>
-                }
-                {
-                    e.titulo === "Ventilador Industrial Vertical" &&
-                    <>
-                    <Image src={e.img2[3]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4                     
-                     ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0   w-[300px] hover:border-none"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && " hover:border-0   w-[400px] rounded-2xl"}
-
-                    `}/>
-                <Image src={e.img2[4]} width={530} height={530} alt=""  className={`absolute z-20 mt-20 border-4 hover:cursor-pointer 
-                    
-                     ${e.titulo === "Ventilador Industrial Vertical" && "hover:border-4 hover:border-[#fe7604] border-[0px] hover:scale-105 transition   mt-[0px] relative  w-[300px] hover:border-none"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && "  hover:scale-105 transition   mt-[0px] relative  w-[400px] rounded-2xl"}
-                    `} 
-                    style={{animationDuration: "10s"}} />
-                {
-                    e.titulo != "Ventilador Móvil de 45° Industrial" &&
-                <Image src={e.img2[5]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer relative bottom-10 hover:border-4 hover:border-[#fe7604]
-                   
-                    ${e.titulo === "Ventilador Industrial Vertical" && "hover:border-none hover:border-0  mt-[0px] bottom-[0px]  w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && " hover:border-0  mt-[0px] bottom-[0px]  w-[400px] rounded-2xl"}
-                    `}/>
-                }
-                    </>
-                }
-
-{
-                    e.titulo === "Ventilador Comercial Vertical" &&
-                    <>
-                    <Image src={e.img2[3]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4                     
-                     ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0   w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && " hover:border-0 hover:border-none  w-[400px] rounded-2xl"}
-
-                    `}/>
-                    <Image src={e.img2[3]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4                     
-                     ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0   w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && " hover:border-0 hover:border-none  w-[400px] rounded-2xl"}
-
-                    `}/>
-                    <Image src={e.img2[3]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4                     
-                     ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0   w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && " hover:border-0 hover:border-none  w-[400px] rounded-2xl"}
-
-                    `}/>
-                <Image src={e.img2[4]} width={530} height={530} alt=""  className={`absolute z-20 mt-20 border-4 hover:cursor-pointer 
-                    
-                     ${e.titulo === "Ventilador Industrial Vertical" && "hover:border-4 hover:border-[#fe7604] border-[0px] hover:scale-105 transition   mt-[0px] relative  w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-4 hover:border-[#fe7604] border-[0px] hover:scale-105 transition   mt-[0px] relative hover:border-none w-[400px] rounded-2xl"}
-                    `} 
-                    style={{animationDuration: "10s"}} />
-                {
-                    e.titulo != "Ventilador Móvil de 45° Industrial" &&
-                <Image src={e.img2[5]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer relative bottom-10 hover:border-4 hover:border-[#fe7604]
-                   
-                    ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0  mt-[0px] bottom-[0px]  w-[300px]"}
-                     ${e.titulo === "Ventilador Comercial Vertical" && " hover:border-0 hover:border-none mt-[0px] bottom-[0px]  w-[400px] rounded-2xl"}
-                    `}/>
-                }
-                    </>
-                }
-
-                {
-                    e.titulo === "Ventilador Móvil Industrial" &&
-                    <Image src={e.img2[3]} width={450} height={450} alt=""  className={`absolute ml-[60vw] z-20 mt-20 border-4 hover:cursor-pointer 
-                        ${e.titulo === "Ventilador de Techo Comercial" ? "border-[#f0c50b]" : "border-[#fe7604] "}
-                        ${e.titulo === "Ventilador Móvil Industrial" && "border-[#ff3131] bg-[#ff3131] mt-[7%] ml-[62%]"}`} 
-                        style={{animationDuration: "10s"}} />
-                }
-            </div>
-            {
-                e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" &&
-                <div className="mt-10 ml-28">
-                    <Image src={e.img2[0]} width={800} height={400} alt=""/>
-                </div>
-            }
+            
             {
                 e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" &&
                 <div className="relative mt-[-300px] left-[-25vw] z-50">
