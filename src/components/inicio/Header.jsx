@@ -171,7 +171,7 @@ export default function Header() {
                                     :
                                     <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-[5.5rem] font-bold 
                                         ${e.titulo === "VENTILADOR DE TECHO INDUSTRIAL" && "lg:w-[190%]"}
-                                        ${e.titulo == "EQUIPOS DE EXTRACCIÓN" && "lg:w-[202%]"}
+                                        ${e.titulo == "EQUIPOS DE EXTRACCIÓN" && "lg:w-[900px]"}
                                         
                                         `} 
                                         style={{lineHeight: 1}}

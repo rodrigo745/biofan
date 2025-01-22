@@ -17,10 +17,10 @@ export default function Aplicaciones() {
     const titulosComerciales = [
         { text: "Gimnasios", img: ["/comercial/co_1.jpg", "/comercial/1-1.png", "/comercial/1-2.png", "/comercial/1-3.png"] },
         { text: "Estaciones de Tren y Autobuses", img: ["/comercial/co_2.jpg", "/comercial/2-1.png", "/comercial/2-2.png", "/comercial/2-3.png"] },
-        { text: "Centros Deportivos", img: ["/comercial/co_3.jpg", "/comercial/3-1.png", "/comercial/3-2.png", "/comercial/3-3.png"] },
+        { text: "Centros Deportivos", img: ["/comercial/co_3.png", "/comercial/3-1.png", "/comercial/3-2.png", "/comercial/3-3.png"] },
         { text: "Sala de Espera", img: ["/comercial/co_4.jpg", "/comercial/4-1.png", "/comercial/4-2.png", "/comercial/4-3.png"] },
         { text: "Recintos Feriales y de Exposición", img: ["/comercial/co_5.jpg", "/comercial/5-1.png", "/comercial/5-2.png", "/comercial/5-3.png"] },
-        { text: "Escuelas", img: ["/comercial/co_6.jpg", "/comercial/6-1.png", "/comercial/6-2.png", "/comercial/6-3.png"] }
+        { text: "Escuelas", img: ["/comercial/co_6.png", "/comercial/6-1.png", "/comercial/6-2.png", "/comercial/6-3.png"] }
     ];
 
     const mostrarPestaña = (e) => {
@@ -49,7 +49,7 @@ export default function Aplicaciones() {
         <div className="w-full mb-20">
             <div className="w-full flex flex-col items-center justify-center pt-10 ">
                 <h2 className="text-[#1d4674] text-2xl roboto md:text-5xl font-bold mb-4">ÁREA DE APLICACIÓN</h2>
-                <p className="w-[71vw] mb-4 text-xl text-justify helvetica">La Serie de ventiladores industriales BIOFAN ha sido cuidadosamente desarrollada para llegar a tantas aplicaciones como sea posible con la tecnología más avanzada. Ofrecemos ventiladores que se pueden encontrar en una amplia variedad de espacios industriales y comerciales. </p>
+                <p className="w-[71vw] mb-4 text-xl text-justify helvetica text-[#1d4674] font-bold">La Serie de ventiladores industriales BIOFAN ha sido cuidadosamente desarrollada para llegar a tantas aplicaciones como sea posible con la tecnología más avanzada. Ofrecemos ventiladores que se pueden encontrar en una amplia variedad de espacios industriales y comerciales. </p>
                 <div className="w-[90%] md:w-[75%] flex justify-between text-md md:text-2xl mt-0 text-[#1d4674] font-bold helvetica">
                     <p onClick={mostrarPestaña} id="0" className={!pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}`}>Escenarios industriales</p>
                     <p onClick={mostrarPestaña} id="1" className={pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}`}>Escenarios comerciales</p>
@@ -117,8 +117,9 @@ export default function Aplicaciones() {
                 modal &&
                 <div className="contModalAplicaciones z-10 cursor-pointer space-x-3">
                     {/* Botones de navegación de imágenes */}
-                    <button id="0" onClick={() => cambiarImg(0)} className="btnModal w-3 h-3 z-10"></button>
-                    <button id="1" onClick={() => cambiarImg(1)} className="btnModal w-4 h-4 z-10"></button>
+                    <button id="1" onClick={() => cambiarImg(1)} className="btnModal w-3 h-3 z-10"></button>
+                    <button id="2" onClick={() => cambiarImg(2)} className="btnModal w-4 h-4 z-10"></button>
+                    <button id="3" onClick={() => cambiarImg(3)} className="btnModal w-4 h-4 z-10"></button>
                     <div className="modalAplicaciones relative ">
                         <p className="relative text-center top-[-40px] text-4xl text-white text-shadow mt-[-40px] font-bold">{
                             numero <= 6 ?
@@ -130,8 +131,9 @@ export default function Aplicaciones() {
                         <p className="text-5xl w-[30px] absolute text-white font-bold mt-[-86px] right-4" onClick={() => showModal(0)} >x</p>
                         <Image src={`${numero <= 6 ? titulosIndustriales[numero].img[imgNum] : titulosComerciales[numero - 10].img[imgNum]}`} width={800} height={800} alt="" className="w-full" />
                     </div>
+                    <button id="1" onClick={() => cambiarImg(3)} className="btnModal w-4 h-4 z-10"></button>
                     <button id="2" onClick={() => cambiarImg(2)} className="btnModal w-4 h-4 z-10"></button>
-                    <button id="3" onClick={() => cambiarImg(3)} className="btnModal w-3 h-3"></button>
+                    <button id="3" onClick={() => cambiarImg(1)} className="btnModal w-3 h-3"></button>
                 </div>
             }
         
@@ -140,17 +142,17 @@ export default function Aplicaciones() {
                 <p className="text-[#3c3c3a] text-center text-[1.9rem] font-bold  italic scale-90">No te preocupes, personalizamos una solución a tu necesidad </p>
                 <p className="text-[#fe7604] text-center font-bold text-[2.1rem] scale-90">¡Sólo dinos que estás buscando!</p>
                 <div className="bg-[#fe7604] w-[98.5vw] h-[30vh] absolute  z-0 mt-[250px]"></div>
-                <Image src="/apli.png" alt="" width={1000} height={1200} className="mx-auto relative z-10  scale-[0.85]" />
+                <Image src="/apli.png" alt="" width={1000} height={1200} className="mx-auto relative z-10 " />
 
             </div>
 
                                     
             <div className="w-full h-full lg:h-[100%]">
                 <div className="bg-[#f0c50b] w-full h-[39vh] absolute"></div>
-                <div className="bg-[#fe7604] w-[23vw] h-[36vh] absolute mt-[355px] ml-[27vw]"></div>
+                <div className="bg-[#fe7604] w-[23vw] h-[30vh] absolute mt-[355px] ml-[27vw]"></div>
                 <Image src="/inicio/noticias/fondo.png" width={1000} height={300} 
-            alt="" className="w-[40vw] mx-auto relative pt-20"/>
-            <div className="flex justify-end relative lg:right-[14vw] bottom-24">
+            alt="" className="w-[32vw] mx-auto relative pt-20"/>
+            <div className="flex justify-end relative lg:right-[14vw] bottom-24 scale-90">
 
                 <div className="bg-white lg:w-[38.5%] px-8 pt-10 pl-12 flex lg:space-x-9">
                     <div className="hidden lg:block">

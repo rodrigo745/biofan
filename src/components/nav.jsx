@@ -112,8 +112,8 @@ export default function Nav(){
                                         </Link>
                                     </div> 
                                 </div>
-                                <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
-                                    <p>Evaporativos</p>
+                                <div  className="enlace hover:relative hover:pl-8 dropdown2">
+                                    <Link href="/pages/evaporativos">Evaporativos</Link>
                                     <div className="dropdown-content2">
                                         <Link href="/pages/productos/8" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/7.png" width={40} height={50} className="w-fit " alt=""/>
@@ -141,7 +141,7 @@ export default function Nav(){
                                         </Link>
                                     </div>
                                 </div>
-                                <Link href="/pages/productos" className="enlace hover:relative hover:pl-8">Recubrimiento solar</Link>
+                                <Link href="/pages/inicio/8" className="enlace hover:relative hover:pl-8">Recubrimiento solar</Link>
                             </div>
                         </div>
                         <div className="dropdown">

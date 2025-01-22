@@ -20,13 +20,13 @@ export default function Productos(){
 
     return(
         <div className="w-full ">
-            <h1 className="pt-20 pb-10 text-center lg:text-6xl font-bold text-[#1d4674] ">Ventiladores BIOFAN</h1>
+            <h1 className="pt-7 text-center lg:text-5xl font-bold text-[#1d4674] ">Ventiladores BIOFAN</h1>
            
-            <div className="w-full h-[260vh] bg-[#e6e6d4] py-10 lg:h-[85vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-6 px-10" >
+            <div className="w-full mt-4 h-[260vh] bg-[#e6e6d4] py-2 lg:h-[78vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12  px-24" >
                 {
                     informacion.map((e, index)=> (
-                        <Link href={`/pages/productos/${index+1}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
+                        <Link  href={`/pages/productos/${index+1}`} key={index} className={`w-[100%] scale-90 lg:w-[25%] h-full 
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-95 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
                             <div className={`py-3 px-3 w-[80%] text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
@@ -39,11 +39,11 @@ export default function Productos(){
                     ))
                 }
             </div>
-            <div className="w-full h-[260vh] bg-[#e6e6d4] py-10 lg:h-[85vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-10 px-10 mb-12" id="producto-2">
+            <div className="w-full h-[260vh] bg-[#e6e6d4] py-2 lg:h-[78vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-10 px-24 mb-12 " id="producto-2">
                 {
                     informacion2.map((e, index)=> (
                         <Link href={index+5 == 8 ? "/pages/inicio/8" : `productos/${index+5}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
+                        flex items-end justify-center mb-5 lg:mb-0 relative scale-90 hover:scale-95 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
                             <div className={`py-2 px-2 w-[80%] text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
@@ -60,9 +60,9 @@ export default function Productos(){
                     ))
                 }
             </div>
-            <div className="bg-[#e6e6d4] w-full h-[260vh] lg:h-[75vh] px-10 flex justify-between mb-20 p-10 space-x-14">
-                <Link href={"/pages/evaporativos"} className={`w-[100%] lg:w-[50%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-[1.03] transition cursor-pointer`}>
+            <div className="bg-[#e6e6d4] w-full h-[260vh] lg:h-[75vh] px-20 flex justify-between mb-20 p-10 space-x-14">
+                <Link href={"/pages/evaporativos"} className={`w-[100%] lg:w-[50%] h-full scale-90 
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-[0.92] transition cursor-pointer`}>
                             <Image src="/productos/8.png" width={800} height={800} alt="producto" className="absolute w-full h-full" />
                             <div className={`py-3  w-fit px-10 text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
@@ -74,7 +74,7 @@ export default function Productos(){
                             </div>
                         </Link>
                         <Link href="/pages/inicio/9" className={`w-[100%] lg:w-[50%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-[1.03] transition cursor-pointer`}>
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-[0.92] scale-90 transition cursor-pointer`}>
                             <Image src="/productos/11.png" width={800} height={800} alt="producto" className="absolute w-full h-full" />
                             <div className={`py-3 px-12 w-fit text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px] 
