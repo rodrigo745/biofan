@@ -92,24 +92,24 @@ export default function Caracteristicas(){
                     
                     <div className="overflow-hidden relative w-full  mt-14 ">
                         <div className="flex animate-slideCar space-x-28 ">
-                            <Image src="/caracteristicas/1.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/2.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/3.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/4.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/5.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/6.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/1.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/2.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/3.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/4.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/5.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/6.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/1.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/2.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/3.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/4.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/5.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
-                            <Image src="/caracteristicas/6.png" className="object-cover hover:scale-[0.95] transition cursor-pointer" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/1.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/2.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/3.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/4.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/5.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/6.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/1.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/2.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/3.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/4.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/5.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/6.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/1.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/2.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/3.png" className="object-cover" width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/4.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/5.png" className="object-cover " width={220} height={300} alt="" />
+                            <Image src="/caracteristicas/6.png" className="object-cover " width={220} height={300} alt="" />
                         </div>
                     </div>
                 </div>

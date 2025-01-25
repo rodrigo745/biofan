@@ -115,29 +115,29 @@ export default function Nav(){
                                 <div  className="enlace hover:relative hover:pl-8 dropdown2">
                                     <Link href="/pages/evaporativos">Evaporativos</Link>
                                     <div className="dropdown-content2">
-                                        <Link href="/pages/productos/8" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/13" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/7.png" width={40} height={50} className="w-fit " alt=""/>
                                         <p className="">Enfriador Evaporativo Industrial - 335L</p>
                                         </Link>
-                                        <Link href="/pages/productos/8" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/12" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/productos/7/01.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="pt-3">120L Cool Military</p>
                                         </Link>
-                                        <Link href="/pages/productos/8" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/11" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/productos/7/00.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="pt-3">260L Cool Military</p>
                                         </Link>
-                                        <Link href="/pages/evaporativos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
-                                        <Image src="/nav/8.png" width={40} height={50} className="w-fit" alt=""/>
-                                        <p className="">Enfriador Evaporativo Industrial Cool Military</p>
-                                        </Link>
                                         <Link href="/pages/productos/10" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/8.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="">150L Cool Military</p>
+                                        </Link>
+                                        <Link href="/pages/productos/14" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/9.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="">Enfriador Evaporativo Industrial - OFS PRO</p>
                                         </Link>
-                                        <Link href="/pages/evaporativos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/15" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/10.png" width={40} height={50} className="w-fit" alt=""/>
-                                        <p className="">Enfriador Evaporativo Comercial - Senapati</p>
+                                        <p className="">Duct Cooler</p>
                                         </Link>
                                     </div>
                                 </div>
