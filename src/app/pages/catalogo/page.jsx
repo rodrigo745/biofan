@@ -101,18 +101,18 @@ export default function Catalogo(){
             <p className="text-4xl w-full pl-[20vw] font-bold mt-[-90px] text-[#1d4674] bg-gradient-to-r from-neutral-300 to-white py-3">SERIE HDS/L</p>
 
             <div className="grid grid-cols-3 gap-32 w-[59%] mx-auto items-end mb-20 mt-10">
-                <Image  src="/catalogo/items/1.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
-                <Image  src="/catalogo/items/2.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
-                <Image  src="/catalogo/items/3.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/a1.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/a2.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/a3.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
             </div>
             <p className="text-4xl w-full pl-[20vw] font-bold mt-[-10px] text-[#1d4674] bg-gradient-to-r from-neutral-300 to-white py-3">EQUIPOS EVAPORATIVOS</p>
 
             <div className="grid grid-cols-3 gap-32 w-[59%] mx-auto items-end mb-20 mt-10">
-                <Image  src="/catalogo/items/4.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/a4.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
                 <a href="https://drive.google.com/file/d/1AP-DubM7bC70qAOQ7q1yUCgEH0xU7eRA/view" target="_blank">
-                    <Image  src="/catalogo/items/5.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                    <Image  src="/catalogo/a5.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
                 </a>
-                <Image  src="/catalogo/items/6.png" width={300} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/a6.png" width={300} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
             </div>
             <div className="flex ">
                     <p className="text-4xl w-[700px] ml-[18vw] pl-10 font-bold text-[#1d4674] bg-gradient-to-r from-neutral-300 to-white h-16 pt-3">EQUIPOS DE EXTRACCIÓN</p>
@@ -121,10 +121,10 @@ export default function Catalogo(){
                 </div>
             <div className="grid grid-cols-3 gap-32 w-[59%] mx-auto items-end mb-20 ">
 
-                <Image  src="/catalogo/items/7.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
-                <Image  src="/catalogo/items/8.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/a7.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
+                <Image  src="/catalogo/a8.png" width={250} height={300} className="w-fit hover:scale-105 transition cursor-pointer" alt=""/>
                 <a href="https://drive.google.com/file/d/10uH_qife1JBbpLE1FWtVkp9f3xHk--Ac/view" target="_blank">
-                    <Image  src="/catalogo/items/9.png" width={380} height={300} className="w-fit hover:scale-[1.15] transition cursor-pointer scale-110 mb-4" alt=""/>
+                    <Image  src="/catalogo/a9.png" width={380} height={300} className="w-fit hover:scale-[1.15] transition cursor-pointer scale-110 mb-4" alt=""/>
                 </a>
             </div>
         </div>
