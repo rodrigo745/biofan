@@ -48,21 +48,21 @@ export default function Aplicaciones() {
     return (
         <div className="w-full mb-20">
             <div className="w-full flex flex-col items-center justify-center pt-10 ">
-                <h2 className="text-[#1d4674] text-2xl roboto md:text-5xl font-bold mb-4">ÁREA DE APLICACIÓN</h2>
-                <p className="w-[71vw] mb-4 text-xl text-justify helvetica text-[#1d4674] font-bold">La Serie de ventiladores industriales BIOFAN ha sido cuidadosamente desarrollada para llegar a tantas aplicaciones como sea posible con la tecnología más avanzada. Ofrecemos ventiladores que se pueden encontrar en una amplia variedad de espacios industriales y comerciales. </p>
-                <div className="w-[90%] md:w-[75%] flex justify-between text-md md:text-2xl mt-0 text-[#1d4674] font-bold helvetica">
+                <h2 className="text-[#1d4674] text-2xl  md:text-[3.3rem] font-bold mb-4 mt-5">Área de Aplicación</h2>
+                <p className="w-[55.4vw] mb-7 mt-5 text-[1.2rem] text-justify  text-[#1d4674] font-semibold">La Serie de ventiladores industriales BIOFAN ha sido cuidadosamente desarrollada para llegar a tantas aplicaciones como sea posible con la tecnología más avanzada. Ofrecemos ventiladores que se pueden encontrar en una amplia variedad de espacios industriales y comerciales. </p>
+                <div className="w-[90%] md:w-[56%] flex justify-between text-md md:text-2xl mt-0 text-[#1d4674] font-bold helvetica">
                     <p onClick={mostrarPestaña} id="0" className={!pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}`}>Escenarios industriales</p>
                     <p onClick={mostrarPestaña} id="1" className={pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}`}>Escenarios comerciales</p>
                 </div>
             </div>
 
             {/* Contenido de las pestañas */}
-            <div className="w-full flex justify-center mt-0 scale-90">
+            <div className="w-full flex justify-center scale-[0.76] relative mt-[-62px]">
                 <div className="w-[90%] md:w-[80%] flex justify-center items-center text-xl ">
                     {
                         !pestaña ?
                             /* Industriales */
-                            <div className="w-[90%] grid lg:grid-cols-2 xl:grid-cols-3 gap-6 text-white open">
+                            <div className="w-[90%] grid lg:grid-cols-2 xl:grid-cols-3  gap-4 text-white open">
                                 {
                                     titulosIndustriales.map((e, index) => (
                                         <div key={index} className="relative w-[100%] h-[250px] md:h-[300px] bg-slate-300 cursor-pointer" onClick={() => showModal(index)}>
@@ -76,7 +76,7 @@ export default function Aplicaciones() {
                                                 <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-0">
                                                     <div className="w-full h-14 absolute bottom-0 bg-[#1d4674] opacity-100"></div>
                                                 </div>
-                                                <p className="absolute hover:bg-[#1d4674] bottom-0 w-full h-14 p-3 text-left cursor-pointer text-sm lg:text-xl">{e.text}</p>
+                                                <p className="absolute hover:bg-[#1d4674] bottom-0 w-full h-14 p-3 text-left cursor-pointer text-sm font-bold lg:text-2xl">{e.text}</p>
                                             </div>
 
                                         </div>
@@ -100,7 +100,7 @@ export default function Aplicaciones() {
                                                 <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-0">
                                                     <div className="w-full h-10 md:h-14 absolute bottom-0 bg-[#1d4674] opacity-100"></div>
                                                 </div>
-                                                <p className="absolute hover:bg-[#1d4674] bottom-0 w-full h-14 p-3 text-left cursor-pointer text-sm lg:text-xl">{e.text}</p>
+                                                <p className="absolute hover:bg-[#1d4674] bottom-0 w-full h-14 p-3 text-left cursor-pointer text-sm font-bold lg:text-2xl">{e.text}</p>
                                             </div>
                                         </div>
                                     ))
@@ -119,7 +119,7 @@ export default function Aplicaciones() {
                     {/* Botones de navegación de imágenes */}
                     <button id="1" onClick={() => cambiarImg(1)} className="btnModal w-3 h-3 z-10"></button>
                     <button id="2" onClick={() => cambiarImg(2)} className="btnModal w-4 h-4 z-10"></button>
-                    <button id="3" onClick={() => cambiarImg(3)} className="btnModal w-4 h-4 z-10"></button>
+                    <button id="3" onClick={() => cambiarImg(3)} className="btnModal w-5 h-5 z-12"></button>
                     <div className="modalAplicaciones relative ">
                         <p className="relative text-center top-[-40px] text-4xl text-white text-shadow mt-[-40px] font-bold">{
                             numero <= 6 ?
@@ -131,38 +131,33 @@ export default function Aplicaciones() {
                         <p className="text-5xl w-[30px] absolute text-white font-bold mt-[-86px] right-4" onClick={() => showModal(0)} >x</p>
                         <Image src={`${numero <= 6 ? titulosIndustriales[numero].img[imgNum] : titulosComerciales[numero - 10].img[imgNum]}`} width={800} height={800} alt="" className="w-full" />
                     </div>
-                    <button id="1" onClick={() => cambiarImg(3)} className="btnModal w-4 h-4 z-10"></button>
+                    <button id="1" onClick={() => cambiarImg(3)} className="btnModal w-5 h-5 z-10"></button>
                     <button id="2" onClick={() => cambiarImg(2)} className="btnModal w-4 h-4 z-10"></button>
                     <button id="3" onClick={() => cambiarImg(1)} className="btnModal w-3 h-3"></button>
                 </div>
             }
         
-            <div className="bg-[#f6f1f1] p-2 mt-16 mb-28 ">
-                <p className="mt-14 text-[2.8rem] font-bold text-center text-[#1d4674] roboto scale-90">¿NO SABES POR DÓNDE EMPEZAR?</p>
-                <p className="text-[#3c3c3a] text-center text-[1.9rem] font-bold  italic scale-90">No te preocupes, personalizamos una solución a tu necesidad </p>
-                <p className="text-[#fe7604] text-center font-bold text-[2.1rem] scale-90">¡Sólo dinos que estás buscando!</p>
-                <div className="bg-[#fe7604] w-[98.5vw] h-[30vh] absolute  z-0 mt-[250px]"></div>
-                <Image src="/apli.png" alt="" width={1000} height={1200} className="mx-auto relative z-10 " />
-
+            <div>
+                <Image width={1400} height={1200} className="mx-auto mt-10 mb-10" src="/apli.png" alt="" />    
             </div>
 
                                     
             <div className="w-full h-full lg:h-[100%]">
-                <div className="bg-[#f0c50b] w-full h-[39vh] absolute"></div>
-                <div className="bg-[#fe7604] w-[23vw] h-[30vh] absolute mt-[355px] ml-[27vw]"></div>
-                <Image src="/inicio/noticias/fondo.png" width={1000} height={300} 
-            alt="" className="w-[32vw] mx-auto relative pt-20"/>
-            <div className="flex justify-end relative lg:right-[14vw] bottom-24 scale-90">
+                <div className="bg-[#f0c50b] w-full h-[36vh] absolute z-10"></div>
+                <div className="bg-[#fe7604] w-[23vw] h-[36vh] absolute mt-[155px] ml-[34vw] z-10"></div>
+                <Image src="/inicio/noticias/fondo.png" width={900} height={300} 
+            alt="" className="w-[25vw] mx-auto relative pt-20 z-10"/>
+            <div className="flex justify-end relative lg:right-[23vw] bottom-10 z-20">
 
-                <div className="bg-white lg:w-[38.5%] px-8 pt-10 pl-12 flex lg:space-x-9">
+                <div className="bg-white lg:w-[31.5%] px-2 pt-4 pl-8 flex lg:space-x-9 scale-90">
                     <div className="hidden lg:block">
-                        <Image src="/inicio/noticias/logo.jpg" width={100} height={100} alt=""  className="w-[140px] mt-6"/>
+                        <Image src="/inicio/noticias/logo.jpg" width={60} height={60} alt=""  className="w-[110px] mt-6"/>
                     </div>
-                    <div className="text-[#1d4674] roboto w-[100%] pr-10">
-                        <p className="text-4xl font-medium mt-5 mb-5">Solicita un estudio de forma totalmente gratuita</p>
-                        <p className="text-xl text-justify">Nuestro equipo técnico se desplazará hasta tus instalaciones para realizar estudios de confort térmico y de eficiencia energética gratuitos y ofrecerte así, la mejor solución de ventilación industrial.</p>
-                        <div className="w-full pl-14 mt-5 px-8 py-4 bg-[#1d4674] flex text-white text-xl font-semibold cursor-pointer hover:bg-blue-900">SOLICITAR ESTUDIO AHORA 
-                            <p className="relative left-5 mr-3 top-[1px] lineaSol"></p>
+                    <div className="text-[#1d4674] roboto w-[100%] pr-8">
+                        <p className="text-2xl font-medium mt-5 mb-5 text-center">Solicita un estudio de forma totalmente gratuita</p>
+                        <p className="text-lg text-justify">Nuestro equipo técnico se desplazará hasta tus instalaciones para realizar estudios de confort térmico y de eficiencia energética gratuitos y ofrecerte así, la mejor solución de ventilación industrial.</p>
+                        <div className="w-full pl-14 mt-5 px-4 py-4 bg-[#1d4674] flex text-white font-semibold cursor-pointer hover:bg-blue-900">SOLICITAR ESTUDIO AHORA 
+                            <p className="relative left-5 mr-3 top-[-2px] lineaSol"></p>
                             <p className=" relative scale-150 mt-[6px] lg:mt-0">{">"}</p>
                             </div>
                     </div>

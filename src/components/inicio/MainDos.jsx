@@ -26,27 +26,39 @@ export default function MainDos(){
     ]
 
     return(
-        <div className="w-full pt-14 lg:h-[100%] mt-[200px] pb-40">
-            <Image src="/inicio/inicio_main_2.png" alt="" className="w-full z-0 absolute" width={1080} height={1920} />
-            <div className="mb-20 flex justify-end z-10 mt-20">
-                <h3 className="text-3xl mt-4 lg:text-5xl z-10 font-bold roboto text-[#1d4674] text-right bg-white w-fit p-4 px-48 rounded-sm">¿Por qué elegir BIOFAN?</h3>
+        <div className="w-full  lg:h-[100%] mt-[220px] pb-40">
+            
+            <div className="">
+                <div className="bg-[#fe7604] w-[50vw] h-[75px] absolute mt-[50px] right-0"></div>
+                <div className="bg-[#e6e6d4] w-[50vw] h-[75px] absolute mt-[125px] left-0"></div>
+                <div className="bg-[#f0c50b] w-[50vw] h-[75px] absolute mt-[200px] right-0"></div>
+                <div className="bg-[#fe7604] w-[50vw] h-[75px] absolute mt-[275px] left-0"></div>
+                <div className="bg-[#e6e6d4] w-[50vw] h-[75px] absolute mt-[350px] right-0"></div>
+                <div className="bg-[#f0c50b] w-[50vw] h-[75px] absolute mt-[420px] left-0"></div>
+                <div className="bg-[#fe7604] w-[50vw] h-[75px] absolute mt-[495px] right-0"></div>
+                <div className="bg-[#e6e6d4] w-[50vw] h-[75px] absolute mt-[570px] left-0"></div>
+                <div className="bg-[#f0c50b] w-[50vw] h-[75px] absolute mt-[645px] right-0"></div>
             </div>
-            <div className="w-full scale-[77%]">
-                <div className="lg:flex lg:flex-wrap lg:space-x-24  justify-center imgMain">
-                    <div className="w-[23vw] h-[470px] shadow-md flex flex-col justify-center py-10 px-12 bg-[#e6e6d4] rounded-md mt-28">
-                        <p className="text-9xl sans">1</p>
-                        <p className="text-4xl font-bold open mt-2">Comodidad térmica</p>
-                        <p className="text-3xl helvetica mt-5 ">Los ventiladores BIOFAN brindan un mayor confort térmico para la industria, el comercio minorista y la agroindustria.</p>
+
+            <div className="mb-8 flex justify-end z-10 mt-20">
+                <h3 className="text-3xl mt-0 lg:text-5xl z-10 font-bold roboto text-white text-right bg-[#1d4674] w-fit p-4 px-[265px] ">¿Por qué elegir BIOFAN?</h3>
+            </div>
+            <div className="w-full mb-2">
+                <div className="lg:flex lg:flex-wrap lg:space-x-12 scale-95 justify-center imgMain">
+                    <div className="w-[17vw] h-[370px] shadow-md flex flex-col justify-center py-10 px-5 pr-2 bg-[#e6e6d4] rounded-sm mt-28">
+                        <p className="text-8xl sans">1</p>
+                        <p className="text-3xl font-bold open mt-2">Comodidad térmica</p>
+                        <p className="text-2xl helvetica mt-3">Los ventiladores BIOFAN brindan un mayor confort térmico para la industria, el comercio minorista y la agroindustria.</p>
                     </div>
-                    <div className="w-[23vw] h-[470px] shadow-md flex flex-col justify-center py-10 px-12 bg-[#fe7604] text-white rounded-md">
-                        <p className="text-9xl sans">2</p>
-                        <p className="text-4xl font-bold open mt-2">Servicio</p>
-                        <p className="text-3xl helvetica mt-5 ">Servicio de atención al cliente, antes, durante y después de la compra.</p>
+                    <div className="w-[17vw] h-[370px] shadow-md flex flex-col justify-center py-10 px-5 bg-[#fe7604] text-white rounded-sm">
+                        <p className="text-8xl sans">2</p>
+                        <p className="text-3xl font-bold open mt-2">Servicio</p>
+                        <p className="text-2xl helvetica mt-3 ">Servicio de atención al cliente, antes, durante y después de la compra.</p>
                     </div>
-                    <div className="w-[23vw] h-[470px] shadow-md flex flex-col justify-center py-10 px-12 bg-[#f0c50b] rounded-md mt-28">
-                        <p className="text-9xl sans">3</p>
-                        <p className="text-4xl font-bold open mt-2">Económico</p>
-                        <p className="text-3xl helvetica mt-5 ">No aumenta el consumo de energía en su industria, comercio minorista o agronegocio.</p>
+                    <div className="w-[17vw] h-[370px] shadow-sm flex flex-col py-5 px-5 bg-[#f0c50b] rounded-md mt-28">
+                        <p className="text-8xl sans">3</p>
+                        <p className="text-3xl font-bold open">Económico</p>
+                        <p className="text-2xl helvetica mt-3 ">No aumenta el consumo de energía en su industria, comercio minorista o agronegocio.</p>
                     </div>
                 </div>
             </div>

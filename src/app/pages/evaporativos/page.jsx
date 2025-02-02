@@ -14,75 +14,24 @@ export default function Evaporativos(){
     return(
         <div>
             <div className="flex">
-                <div className="text-center w-[70%] p-20">
+                <div className="text-center w-[72%] p-20 scale-95 ml-32 relative mt-[-30px]">
                     <h2 className="text-5xl mb-5 text-[#1d4674] font-bold">Equipos Evaporativos</h2>
-                    <p className="text-2xl text-[#1d4674] px-40 helvetica">Los ventiladores evaporativo, también conocidos como “climatizadores evaporativos” o “enfriadores de aire por evaporación”, operan mediante un proceso natural de enfriamiento basado en la evaporación del agua.</p>
-                    <Image src="/evaporativos/1.png" className="rounded-[9rem] mx-auto mt-8" alt="" width={900} height={400} />
+                    <p className="text-xl text-[#1d4674] px-40 helvetica font-bold">Los ventiladores evaporativo, también conocidos como “climatizadores evaporativos” o “enfriadores de aire por evaporación”, operan mediante un proceso natural de enfriamiento basado en la evaporación del agua.</p>
+                    <Image src="/evaporativos/1.png" className="rounded-[5rem] mx-auto mt-8" alt="" width={900} height={400} />
+                    <p className="text-center text-[#fe7604] font-bold w-[70%] mx-auto mt-9 text-xl">El verano trae consigo temperaturas elevadas que pueden afectar seriamente el
+                    bienestar y la productividad de los trabajadores en entornos industriales</p>
                 </div>
-                <div className="flex flex-col  gap-0 mt-0 mb-20" >
-            {/* Burbuja 1 */}
-            <div
-                className={`burbuja33 mt-10 w-[230px] h-[240px] flex flex-col justify-center items-center ${
-                isHovered1 ? 'circular' : 'deformada1'
-                }`}
-                onMouseEnter={() => setIsHovered1(true)}
-                onMouseLeave={() => setIsHovered1(false)}
-            >
-                <div
-                className={`burbuja33 w-[60px] h-[60px] flex justify-center items-center text-3xl text-center mx-auto ${
-                    isHovered1 ? 'deformada1' : 'circular'
-                }`}
-                >
-                <p className="text-[#1d4674] font-bold">1</p>
+                <div className="flex flex-col  gap-0 mt-16 mb-20 relative ml-[-170px]" >
+                    <Image src="/evaporativos/10.png" alt="" width={220} height={300} className=""/>
                 </div>
-                <p className="text-[#1d4674] font-bold text-lg mt-3 mb-2">Captación de aire</p>
-                <p className="text-[#1d4674] text-sm text-center mb-4">Un ventilador interno aspira el aire caliente del entorno.</p>
             </div>
-
-            {/* Burbuja 2 */}
-            <div
-                className={`burbuja33 mt-5 w-[230px] h-[240px] flex flex-col justify-center items-center ${
-                isHovered2 ? 'circular' : 'deformada2'
-                }`}
-                onMouseEnter={() => setIsHovered2(true)}
-                onMouseLeave={() => setIsHovered2(false)}
-            >
-                <div
-                className={`burbuja33 w-[60px] h-[60px] flex justify-center items-center text-3xl text-center mx-auto ${
-                    isHovered2 ? 'deformada2' : 'circular'
-                }`}
-                >
-                <p className="text-[#fe7604] font-bold">2</p>
-                </div>
-                <p className="text-[#fe7604] font-bold text-lg mt-3 mb-2">Evaporación</p>
-                <p className="text-[#1d4674] text-sm text-center mb-4 px-3">El aire caliente atraviesa un filtro o panel humedecido con agua.</p>
+            <div className="w-full bg-[#e6e6d4] p-14">
+                <Image src="/evaporativos/2.png" className="w-[80%] mx-auto" width={1700} height={1500} alt="" />
             </div>
-
-            {/* Burbuja 3 */}
-            <div
-                className={`burbuja33 mt-5 w-[230px] h-[240px] flex flex-col justify-center items-center ${
-                isHovered3 ? 'circular' : 'deformada3'
-                }`}
-                onMouseEnter={() => setIsHovered3(true)}
-                onMouseLeave={() => setIsHovered3(false)}
-            >
-                <div
-                className={`burbuja33 w-[60px] h-[60px] flex justify-center items-center text-3xl text-center mx-auto ${
-                    isHovered3 ? 'deformada3' : 'circular'
-                }`}
-                >
-                <p className="text-[#f0c50b] font-bold">3</p>
-                </div>
-                <p className="text-[#f0c50b] font-bold text-lg mt-3 mb-2">Enfriamiento</p>
-                <p className="text-[#1d4674] text-sm text-center mb-4">El aire, ahora más frío y humidificado, se expulsa de nuevo al ambiente.</p>
-            </div>
-            </div>
-
-            </div>
-            <Image src="/evaporativos/2.png" className="w-[80%] mx-auto" width={1700} height={1500} alt="" />
-            <div className="flex space-x-16 mt-12 bg-[#1d4674] p-4 text-white pt-10 pb-10 justify-center">
-                <p className="text-2xl font-bold text-center w-[48%]">En BIOFAN, nos enorgullecemos de ofrecer soluciones innovadoras y sostenibles para el bienestar y la comodidad en interiores con los equipos Evaporativos y de Extracción.</p>
-                <Link href="/pages/inicio/7" className="px-8 py-2 mt-8 h-fit bg-[#fe7604] rounded-lg font-bold">Aprende más</Link>
+            <div className="flex space-x-16 bg-[#1d4674] p-4 text-white pt-10 pb-10 justify-center">
+                <p className="text-xl font-bold text-center w-[60%]">“Para maximizar los beneficios de la climatización evaporativa, es esencial colocar los enfriadores en
+áreas estratégicas donde el flujo de aire pueda distribuirse uniformemente. Esto incluye áreas de alta
+actividad y zonas donde se genera más calor”. </p>
             </div>
 
 
@@ -99,6 +48,10 @@ export default function Evaporativos(){
                     <Image src="/evaporativos/1/3.png" className="mx-auto" width={300} height={400} alt=""/>
                     <p className="text-center mt-8 text-xl font-bold text-[#1d4674]">Military Cool Mod-120</p>
                 </Link>
+            </div>
+            <p className="text-center text-[#fe7604] font-bold w-[70%] mx-auto mt-9 text-xl">Estas tecnologías no solo proporcionan un ambiente de trabajo más fresco y confortable, sino que
+            también promueven una mejor calidad del aire y reducen los riesgos asociados con las altas temperaturas. </p>
+            <div className="grid grid-cols-3 gap-6 mt-12 mb-20 mx-auto w-fit items-center">
                 <Link href="/pages/productos/14" className="shadow-xl cursor-pointer hover:scale-105 transition p-6 border w-[400px] h-[450px]" >
                     <Image src="/evaporativos/1/4.png" className="mx-auto" width={300} height={400} alt=""/>
                     <p className="text-center mt-8 text-xl font-bold text-[#1d4674]">Serie - OFS PRO</p>
